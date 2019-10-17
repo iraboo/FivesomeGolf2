@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dateButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:inputType="date"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="302dp"
+        android:layout_height="618dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/resultButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText00"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:editable="true"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText01"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText02"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText03"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText04"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText05"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText10"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:checked="false"
+                android:text="1"
+                android:textAlignment="center"
+                android:textOff="1"
+                android:textOn="1"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText20"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="2"
+                android:textAlignment="center"
+                android:textOff="2"
+                android:textOn="2"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText21"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText22"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText23"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText24"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText25"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText30"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="3"
+                android:textAlignment="center"
+                android:textOff="3"
+                android:textOn="3"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText31"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText32"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText33"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText34"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText35"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText40"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="4"
+                android:textAlignment="center"
+                android:textOff="4"
+                android:textOn="4"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText41"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText42"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText43"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText44"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText45"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText50"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="5"
+                android:textAlignment="center"
+                android:textOff="5"
+                android:textOn="5"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText51"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText52"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText53"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText54"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText55"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText60"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="6"
+                android:textAlignment="center"
+                android:textOff="6"
+                android:textOn="6"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText61"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText62"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText63"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText64"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText65"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText70"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="7"
+                android:textAlignment="center"
+                android:textOff="7"
+                android:textOn="7"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText71"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText72"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText73"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText74"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText75"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText80"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="8"
+                android:textAlignment="center"
+                android:textOff="8"
+                android:textOn="8"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText81"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText82"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText83"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText84"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText85"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText90"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="9"
+                android:textAlignment="center"
+                android:textOff="9"
+                android:textOn="9"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText91"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText92"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText93"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText94"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText95"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText100"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="10"
+                android:textAlignment="center"
+                android:textOff="10"
+                android:textOn="10"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText101"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText102"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText103"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText104"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText105"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText110"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="11"
+                android:textAlignment="center"
+                android:textOff="11"
+                android:textOn="11"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText111"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText112"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText113"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText114"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText115"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText120"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="12"
+                android:textAlignment="center"
+                android:textOff="12"
+                android:textOn="12"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText121"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText122"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText123"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText124"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText125"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText130"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="13"
+                android:textAlignment="center"
+                android:textOff="13"
+                android:textOn="13"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText131"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText132"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText133"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText134"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText135"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText140"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="14"
+                android:textAlignment="center"
+                android:textOff="14"
+                android:textOn="14"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText141"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText142"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText143"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText144"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText145"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText150"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="15"
+                android:textAlignment="center"
+                android:textOff="15"
+                android:textOn="15"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText151"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText152"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText153"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText154"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText155"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText160"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="16"
+                android:textAlignment="center"
+                android:textOff="16"
+                android:textOn="16"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText161"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText162"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText163"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText164"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText165"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText170"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="17"
+                android:textAlignment="center"
+                android:textOff="17"
+                android:textOn="17"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText171"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText172"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText173"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText174"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText175"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText180"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:text="18"
+                android:textAlignment="center"
+                android:textOff="18"
+                android:textOn="18"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText181"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText182"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText183"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText184"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText185"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder1"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText190"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder3"
+                android:text="점수"
+                android:textAlignment="center"
+                android:textOff="점수"
+                android:textOn="점수"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText191"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText192"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText193"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText194"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText195"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText200"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder3"
+                android:text="합계"
+                android:textAlignment="center"
+                android:textOff="합계"
+                android:textOn="합계"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText201"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText202"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText203"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText204"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText205"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/editText210"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder3"
+                android:text="합계"
+                android:textAlignment="center"
+                android:textOff="정산"
+                android:textOn="합계"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText211"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText212"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText213"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText214"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText215"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/customerborder2"
+                android:gravity="center_vertical"
+                android:inputType="numberSigned"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="계산"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:text="저장"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/placeTextView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

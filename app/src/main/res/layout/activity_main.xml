@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="349dp"
+        android:layout_height="303dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/placeEditText"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="골프장"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <EditText
+        android:id="@+id/parEditText"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="72"
+        android:inputType="textPersonName"
+        android:text="72"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/playersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Players Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeEditText" />
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playersTextView">
+
+        <EditText
+            android:id="@+id/p1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="player1"
+            android:inputType="textPersonName"
+            android:text="곽순욱"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="player2"
+            android:inputType="textPersonName"
+            android:text="오은찬"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p3EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="player3"
+            android:inputType="textPersonName"
+            android:text="윤양노"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p4EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="player4"
+            android:inputType="textPersonName"
+            android:text="이선주"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p5EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="player5"
+            android:inputType="textPersonName"
+            android:text="이성안"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+    <TextView
+        android:id="@+id/parTextView"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="Par : "
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toStartOf="@+id/parEditText"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
