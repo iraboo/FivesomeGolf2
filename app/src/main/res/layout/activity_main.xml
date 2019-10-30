@@ -27,6 +27,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
+    <TextView
+        android:id="@+id/parTextView"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical|end"
+        android:text="Par : "
+        app:layout_constraintEnd_toStartOf="@+id/parEditText"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
     <EditText
         android:id="@+id/parEditText"
         android:layout_width="50dp"
@@ -34,6 +45,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
+        android:gravity="center_vertical|end"
         android:hint="72"
         android:inputType="textPersonName"
         android:text="72"
@@ -48,20 +60,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Players Name"
+        android:text="Players' Name"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/placeEditText" />
 
     <LinearLayout
-        android:layout_width="344dp"
-        android:layout_height="218dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="170dp"
+        android:layout_height="215dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playersTextView">
 
@@ -130,16 +141,27 @@
         app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
 
     <TextView
-        android:id="@+id/parTextView"
-        android:layout_width="50dp"
-        android:layout_height="39dp"
+        android:id="@+id/HowmuchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center_vertical"
-        android:text="Par : "
-        android:textAlignment="textEnd"
-        app:layout_constraintEnd_toStartOf="@+id/parEditText"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+        android:text="How much is your stakes?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Spinner
+        android:id="@+id/StakesSpinner"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HowmuchTextView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

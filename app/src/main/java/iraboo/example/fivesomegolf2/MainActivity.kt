@@ -2,6 +2,9 @@ package iraboo.example.fivesomegolf2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 import java.util.*
@@ -13,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val calendar = Calendar.getInstance()
+        val items = resources.getStringArray(R.array.stakes_array)
+        val myAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item,items)
+
+        StakesSpinner.adapter = myAdapter
 
 
         calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
@@ -33,5 +40,28 @@ class MainActivity : AppCompatActivity() {
                 "player5" to p5EditText.text.toString()
             )
         }
+
+        StakesSpinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                when(position) {
+                    0 -> {
+
+                    }
+
+                    1 -> {
+
+                    }
+
+                    2 -> {
+
+                    }
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+
+            }
+        }
+
     }
 }

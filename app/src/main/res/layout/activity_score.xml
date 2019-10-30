@@ -8,14 +8,25 @@
     tools:context=".ScoreActivity">
 
     <TextView
+        android:id="@+id/placeTextView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="left|center_vertical"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/dateTextView"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center_vertical"
+        android:gravity="center_vertical|end"
         android:inputType="date"
-        android:textAlignment="textEnd"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -1551,12 +1562,13 @@
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/customerborder3"
+                android:background="@drawable/customerborder2"
                 android:text="점수"
                 android:textAlignment="center"
                 android:textOff="점수"
                 android:textOn="점수"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/editText191"
@@ -1631,12 +1643,13 @@
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/customerborder3"
+                android:background="@drawable/customerborder2"
                 android:text="합계"
                 android:textAlignment="center"
                 android:textOff="합계"
                 android:textOn="합계"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/editText201"
@@ -1710,12 +1723,13 @@
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/customerborder3"
+                android:background="@drawable/customerborder2"
                 android:text="합계"
                 android:textAlignment="center"
                 android:textOff="정산"
                 android:textOn="합계"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/editText211"
@@ -1787,10 +1801,12 @@
         android:layout_height="40dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:text="계산"
         android:textAlignment="center"
-        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -1800,22 +1816,14 @@
         android:layout_height="40dp"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:clickable="true"
         android:text="저장"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/placeTextView"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center_vertical"
-        android:text="TextView"
-        android:textAlignment="textStart"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
