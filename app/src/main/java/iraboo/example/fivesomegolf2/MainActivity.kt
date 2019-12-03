@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val calendar = Calendar.getInstance()
         val items = resources.getStringArray(R.array.stakes_array)
         val myAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item,items)
+        var stakes = ""
 
         StakesSpinner.adapter = myAdapter
 
@@ -28,22 +29,12 @@ class MainActivity : AppCompatActivity() {
             calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
         }
 
-        playFab.setOnClickListener {
-            startActivity<ScoreActivity>(
-            "place" to placeEditText.text.toString(),
-                "date" to calendar.timeInMillis.toString(),
-                "par" to parEditText.text.toString(),
-                "player1" to p1EditText.text.toString(),
-                "player2" to p2EditText.text.toString(),
-                "player3" to p3EditText.text.toString(),
-                "player4" to p4EditText.text.toString(),
-                "player5" to p5EditText.text.toString()
-            )
-        }
-
         StakesSpinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                when(position) {
+
+                stakes = items[position]
+
+                 /* when(position) {
                     0 -> {
 
                     }
@@ -55,13 +46,30 @@ class MainActivity : AppCompatActivity() {
                     2 -> {
 
                     }
-                }
+                } */
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-
+                stakes = "5,000원"
             }
+
         }
+
+        playFab.setOnClickListener {
+            startActivity<ScoreActivity>(
+            "place" to placeEditText.text.toString(),
+                "date" to calendar.timeInMillis.toString(),
+                "par" to parEditText.text.toString(),
+                "player1" to p1EditText.text.toString(),
+                "player2" to p2EditText.text.toString(),
+                "player3" to p3EditText.text.toString(),
+                "player4" to p4EditText.text.toString(),
+                "player5" to p5EditText.text.toString(),
+                "stakes" to stakes
+            )
+        }
+
+
 
     }
 }

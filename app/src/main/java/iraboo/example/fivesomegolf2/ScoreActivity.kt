@@ -3,8 +3,12 @@ package iraboo.example.fivesomegolf2
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import kotlinx.android.synthetic.main.activity_score.*
 import android.text.format.DateFormat
+import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.startActivity
 
 class ScoreActivity : AppCompatActivity() {
 
@@ -20,6 +24,7 @@ class ScoreActivity : AppCompatActivity() {
         var player3 = intent.getStringExtra("player3")
         var player4 = intent.getStringExtra("player4")
         var player5 = intent.getStringExtra("player5")
+        val stakes = intent.getStringExtra("stakes")
 
         placeTextView.text = place
         dateTextView.text = DateFormat.format("yyyy/MM/dd", date.toLong())
@@ -29,9 +34,6 @@ class ScoreActivity : AppCompatActivity() {
         editText03.text = player3
         editText04.text = player4
         editText05.text = player5
-
-
-
 
 
         var hWeight = IntArray(18,{1})
@@ -44,7 +46,6 @@ class ScoreActivity : AppCompatActivity() {
 
 
         editText10.setOnClickListener {
-
 
             if(editText10.isChecked) {
                 editText10.setBackgroundColor(Color.rgb(255,153,153))
@@ -225,7 +226,6 @@ class ScoreActivity : AppCompatActivity() {
         }
 
 
-        /*
         editText190.setOnClickListener {
 
             pScoreTable[0][0] = editText11.text.toString().toInt()
@@ -325,21 +325,23 @@ class ScoreActivity : AppCompatActivity() {
 
 
             for(i in pScoreTable.indices) {
+                pScore[i] = 0
                 for(j in pScoreTable[i].indices) {
                     pScore[i] = pScore[i] + pScoreTable[i][j]
                 }
             }
 
-            editText191.text = pScore[0].toString()
-            editText192.text = pScore[1].toString()
-            editText193.text = pScore[2].toString()
-            editText194.text = pScore[3].toString()
-            editText195.text = pScore[4].toString()
+            editText191.text = (pScore[0] + par.toInt()).toString()
+            editText192.text = (pScore[1] + par.toInt()).toString()
+            editText193.text = (pScore[2] + par.toInt()).toString()
+            editText194.text = (pScore[3] + par.toInt()).toString()
+            editText195.text = (pScore[4] + par.toInt()).toString()
         }
 
         editText200.setOnClickListener {
 
             for (i in pBirdie.indices) {
+                pBirdie[i] = 0
                 for (j in pScoreTable[i].indices) {
                     if (pScoreTable[i][j] == -1)
                         pBirdie[i]++
@@ -347,6 +349,7 @@ class ScoreActivity : AppCompatActivity() {
             }
 
             for (i in pSum.indices) {
+                pSum[i] = 0
                 for (j in hWeight.indices)
                     pSum[i] = pSum[i] + hWeight[j]*pScoreTable[i][j]
             }
@@ -356,11 +359,14 @@ class ScoreActivity : AppCompatActivity() {
             editText203.text = (pSum[2] + pBirdie[2]*-2).toString()
             editText204.text = (pSum[3] + pBirdie[3]*-2).toString()
             editText205.text = (pSum[4] + pBirdie[4]*-2).toString()
+
         }
+
 
         editText210.setOnClickListener {
 
 
+            total = 0
 
             for (i in pSum.indices) {
                 total = total + (pSum[i] + pBirdie[i]*-2)
@@ -372,7 +378,7 @@ class ScoreActivity : AppCompatActivity() {
             editText214.text = (total - 5*(pSum[3]+pBirdie[3]*-2)).toString()
             editText215.text = (total - 5*(pSum[4]+pBirdie[4]*-2)).toString()
         }
-        */
+
 
         resultButton.setOnClickListener {
             pScoreTable[0][0] = editText11.text.toString().toInt()
@@ -472,6 +478,7 @@ class ScoreActivity : AppCompatActivity() {
 
 
             for(i in pScoreTable.indices) {
+                pScore[i] = 0
                 for(j in pScoreTable[i].indices) {
                     pScore[i] = pScore[i] + pScoreTable[i][j]
                 }
@@ -484,6 +491,7 @@ class ScoreActivity : AppCompatActivity() {
             editText195.text = (pScore[4] + par.toInt()).toString()
 
             for (i in pBirdie.indices) {
+                pBirdie[i] = 0
                 for (j in pScoreTable[i].indices) {
                     if (pScoreTable[i][j] == -1)
                         pBirdie[i]++
@@ -491,6 +499,7 @@ class ScoreActivity : AppCompatActivity() {
             }
 
             for (i in pSum.indices) {
+                pSum[i] = 0
                 for (j in hWeight.indices)
                     pSum[i] = pSum[i] + hWeight[j]*pScoreTable[i][j]
             }
@@ -501,7 +510,7 @@ class ScoreActivity : AppCompatActivity() {
             editText204.text = (pSum[3] + pBirdie[3]*-2).toString()
             editText205.text = (pSum[4] + pBirdie[4]*-2).toString()
 
-
+            total = 0
             for (i in pSum.indices) {
                 total = total + (pSum[i] + pBirdie[i]*-2)
             }
@@ -514,6 +523,39 @@ class ScoreActivity : AppCompatActivity() {
 
         }
 
+        FAB1.setOnClickListener {
+            startActivity<ResultActivity>(
+
+                "gplace" to placeTextView.text.toString(),
+                "gdate" to dateTextView.text.toString(),
+                "gstakes" to stakes,
+
+                "p1name" to editText01.text.toString(),
+                "p2name" to editText02.text.toString(),
+                "p3name" to editText03.text.toString(),
+                "p4name" to editText04.text.toString(),
+                "p5name" to editText05.text.toString(),
+
+                "p1score" to editText191.text.toString(),
+                "p2score" to editText192.text.toString(),
+                "p3score" to editText193.text.toString(),
+                "p4score" to editText194.text.toString(),
+                "p5score" to editText195.text.toString(),
+
+                "p1sum" to editText201.text.toString(),
+                "p2sum" to editText202.text.toString(),
+                "p3sum" to editText203.text.toString(),
+                "p4sum" to editText204.text.toString(),
+                "p5sum" to editText205.text.toString(),
+
+                "p1total" to editText211.text.toString(),
+                "p2total" to editText212.text.toString(),
+                "p3total" to editText213.text.toString(),
+                "p4total" to editText214.text.toString(),
+                "p5total" to editText215.text.toString()
+
+            )
+        }
 
     }
 }

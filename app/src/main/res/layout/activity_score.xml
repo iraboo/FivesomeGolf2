@@ -139,7 +139,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/customerborder2"
                 android:checked="false"
-                android:text="1"
+                android:text="1H"
                 android:textAlignment="center"
                 android:textOff="1"
                 android:textOn="1"
@@ -1724,10 +1724,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/customerborder2"
-                android:text="합계"
+                android:text="정산"
                 android:textAlignment="center"
                 android:textOff="정산"
-                android:textOn="합계"
+                android:textOn="정산"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
@@ -1802,7 +1802,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimaryDark"
-        android:text="계산"
+        android:text="정산"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="14sp"
@@ -1824,6 +1824,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FAB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@color/colorPrimary" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
