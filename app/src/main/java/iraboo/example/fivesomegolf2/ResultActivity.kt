@@ -38,6 +38,14 @@ class ResultActivity : AppCompatActivity() {
         var player4t = intent.getStringExtra("p4total")
         var player5t = intent.getStringExtra("p5total")
 
+        var stakesmoney :Int = 0
+
+        when (stakes) {
+            "5,000원" -> stakesmoney = 5000
+            "10,000원" -> stakesmoney = 10000
+            "15,000원" -> stakesmoney = 15000
+        }
+
         pEditText.text = place
         dEditText.text = date
         sEditText.text = stakes
@@ -65,6 +73,12 @@ class ResultActivity : AppCompatActivity() {
         editText3213.text = player3t
         editText3214.text = player4t
         editText3215.text = player5t
+
+        editText3221.text = (player1t.toInt() * stakesmoney).toString()
+        editText3222.text = (player2t.toInt() * stakesmoney).toString()
+        editText3223.text = (player3t.toInt() * stakesmoney).toString()
+        editText3224.text = (player4t.toInt() * stakesmoney).toString()
+        editText3225.text = (player5t.toInt() * stakesmoney).toString()
 
 
     }
