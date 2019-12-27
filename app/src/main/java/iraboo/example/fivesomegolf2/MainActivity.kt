@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         StakesSpinner.adapter = myAdapter
 
-
         calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
             calendar.set(Calendar.YEAR, year)
             calendar.set(Calendar.MONTH, month)
@@ -52,11 +51,10 @@ class MainActivity : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>) {
                 stakes = "5,000원"
             }
-
         }
 
         playFab.setOnClickListener {
-            startActivity<ScoreActivity>(
+            startActivity<Score1Activity>(
             "place" to placeEditText.text.toString(),
                 "date" to calendar.timeInMillis.toString(),
                 "par" to parEditText.text.toString(),

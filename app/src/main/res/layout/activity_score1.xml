@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Score1Activity">
+
+
+    <TextView
+        android:id="@+id/placeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="left|center_vertical"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical|end"
+        android:inputType="date"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/stakeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="188dp"
+        android:gravity="center|center_vertical"
+        android:inputType="date"
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/editText000"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="1H"
+                android:textOn="1H"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText001"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText002"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText003"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText004"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText005"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText010"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="1H"
+                android:textOn="1H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText011"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText012"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText013"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText014"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText015"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText020"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="2H"
+                android:textOn="2H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText021"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText022"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText023"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText024"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText025"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText030"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="3H"
+                android:textOn="3H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText031"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText032"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText033"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText034"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText035"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText040"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="4H"
+                android:textOn="4H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText041"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText042"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText043"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText044"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText045"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText050"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="5H"
+                android:textOn="5H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText051"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText052"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText053"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText054"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText055"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText060"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="6H"
+                android:textOn="6H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText061"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText062"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText063"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText064"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText065"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText070"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="7H"
+                android:textOn="7H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText071"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText072"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText073"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText074"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText075"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText080"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="8H"
+                android:textOn="8H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText081"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText082"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText083"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText084"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText085"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText090"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="9H"
+                android:textOn="9H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText091"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText092"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText093"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText094"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText095"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText100"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="10H"
+                android:textOn="10H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText101"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText102"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText103"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText104"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText105"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText110"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="11H"
+                android:textOn="11H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText111"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText112"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText113"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText114"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText115"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText120"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="12H"
+                android:textOn="12H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText121"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText122"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText123"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText124"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText125"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText130"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="13H"
+                android:textOn="13H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText131"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText132"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText133"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText134"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText135"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText140"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="14H"
+                android:textOn="14H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText141"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText142"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText143"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText144"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText145"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText150"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="15H"
+                android:textOn="15H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText151"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText152"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText153"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText154"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText155"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText160"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="16H"
+                android:textOn="16H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText161"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText162"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText163"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText164"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText165"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText170"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="17H"
+                android:textOn="17H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText171"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText172"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText173"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText174"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText175"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText180"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="18H"
+                android:textOn="18H"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText181"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText182"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText183"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText184"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText185"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder1"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText190"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="점수"
+                android:textOn="점수"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText191"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText192"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText193"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText194"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText195"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText200"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="합계"
+                android:textOn="합계"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText201"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText202"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText203"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText204"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText205"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText210"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="정산"
+                android:textOn="정산"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText211"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText212"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText213"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText214"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText215"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/editText220"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:textOff="금액"
+                android:textOn="금액"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editText221"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText222"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText223"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText224"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editText225"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/customerborder2"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="정산"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:text="저장"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
